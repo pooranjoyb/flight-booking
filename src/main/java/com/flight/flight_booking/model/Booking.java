@@ -18,7 +18,7 @@ public class Booking {
 
     private LocalDateTime bookingData;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "passenger_id")
     private Passenger passenger;
 
